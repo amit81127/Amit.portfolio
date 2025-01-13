@@ -1,0 +1,116 @@
+/* ProjectCard styles */
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUpCard 1s forwards ease-out; /* Slide-up animation for the card */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Image section */
+.project-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1); /* Zoom-in effect for image */
+}
+
+/* Content (Text and Button) */
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  background-color: #e67e22;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #d45f1a;
+  transform: translateY(-3px); /* Slight hover animation on button */
+}
+
+/* Animation keyframes for sliding card */
+@keyframes slideUpCard {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 250px; /* Smaller size for mobile */
+  }
+  
+  .project-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+  
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+
+  .project-btn {
+    font-size: 1rem;
+    padding: 6px 18px;
+  }
+}

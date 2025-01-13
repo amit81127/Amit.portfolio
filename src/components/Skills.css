@@ -1,0 +1,104 @@
+/* Skills Section */
+.skills-section {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* The container that holds the entire row of skill cards */
+.skills-carousel {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* The skills container that contains all the skill cards */
+.skills-container {
+  display: flex;
+  animation: slideLeftToRight 20s linear infinite;
+}
+
+/* Each skill card will have the following structure */
+.skill-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 180px; /* Control the card's width */
+}
+
+/* Hover effects for skill card */
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styles inside each skill card */
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+/* Skill Name inside each card */
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hover Effects on the Skill Name */
+.skill-card:hover .skill-name {
+  color: #e67e22;
+}
+
+/* The animation responsible for sliding from left to right */
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design for Mobile & Tablets */
+@media (max-width: 768px) {
+  .skill-card {
+    max-width: 160px;
+    padding: 15px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-card {
+    max-width: 140px;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+}

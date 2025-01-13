@@ -1,0 +1,47 @@
+/* Reset and Global Styles */
+body, h1, h2, h3, p, ul, li, a, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 60px 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2 {
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #0056b3;
+}

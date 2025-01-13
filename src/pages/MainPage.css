@@ -1,0 +1,148 @@
+/* Global styles for MainPage */
+.main-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 60px; /* Space between sections */
+}
+
+@media (max-width: 768px) {
+  .main-page {
+    padding: 0 10px;
+  }
+}
+/* Home Section Styling */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-text {
+  width: 50%;
+}
+
+.home-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Make the image circular */
+.home-image {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Stack elements */
+  }
+
+  .home-text, .home-image-container {
+    width: 100%; /* Full width on mobile */
+    text-align: center;
+  }
+}
+/* About Section Styling */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content {
+  width: 60%;
+}
+
+.about-image-container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content,
+  .about-image-container {
+    width: 100%;
+    text-align: center;
+  }
+}/* Skills Section Styling */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-card {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 80%;
+    margin: 10px 0;  /* Reduce spacing between skills */
+  }
+}
+
+/* Projects Section Styling */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  width: 30%;
+  margin: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+/* FeedbackForm Section Styling */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .feedback-form input,
+  .feedback-form textarea {
+    max-width: 90%;
+  }
+}

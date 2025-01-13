@@ -1,0 +1,82 @@
+/* Style the main NotFound page */
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.notfound-image {
+  margin-bottom: 20px;
+}
+
+.notfound-img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  width: 400px; /* You can adjust the image size */
+}
+
+/* Style for the 404 heading */
+.notfound-heading {
+  font-size: 4rem;
+  color: #e74c3c; /* Red color for emphasis */
+  margin: 10px 0;
+}
+
+/* Style for the message */
+.notfound-message {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Style for the home link */
+.notfound-link {
+  font-size: 1.2rem;
+  color: #3498db;
+  text-decoration: none;
+  border: 1px solid #3498db;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.notfound-link:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Make the page responsive */
+@media (max-width: 768px) {
+  .notfound-heading {
+    font-size: 3rem;
+  }
+
+  .notfound-message {
+    font-size: 1.2rem;
+  }
+
+  .notfound-link {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notfound-heading {
+    font-size: 2.5rem;
+  }
+
+  .notfound-message {
+    font-size: 1rem;
+  }
+
+  .notfound-link {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+}

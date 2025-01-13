@@ -1,0 +1,69 @@
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Individual Icon Style */
+.social-icon {
+  font-size: 2.5rem;
+  color: #333;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #1DA1F2; /* Twitter blue */
+}
+
+.social-icon:nth-child(2):hover {
+  color: #333; /* Default for GitHub */
+}
+
+.social-icon:nth-child(3):hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+/* Hover Effect Animation */
+.social-icon i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover i {
+  transform: rotate(360deg); /* Rotate icon on hover */
+}
+
+/* Fade-in Effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+}
