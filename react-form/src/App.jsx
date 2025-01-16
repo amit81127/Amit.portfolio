@@ -1,17 +1,22 @@
-import React from 'react';
-import './App.css';
-import Login from './Component/Login';
-import SignUp from './Component/SignUp';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MainPage from "./pages/MainPage";
+import NotFound from "./pages/NotFound";
+import "./index.css";
 
-import NavBar from './layout/NavBar';
-import Footer from './layout/Footer';
-
-function App() {
-    return (
-        <>
-           
-        </>
-    );
-}
+const App = () => {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;
